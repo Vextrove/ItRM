@@ -23,14 +23,14 @@ statements in tweets can be determined by measuring the amount of subordinating 
 that tweet.
 A computer program will be used to count the number of Dutch and English subordinating
 conjunctions, in two samples of tweets from before and after November 8th 2017. These two
-samples of tweets will be obtained from the Twitter corpus, which contains tweets sorted by year,
+samples of tweets will be obtained from the Twitter corpus accesible via Karora Resources at ssh <sId>@karora.let.rug.nl, which contains tweets sorted by year,
 month and day.
+
 If the hypothesis holds true, there will be in increase in the number of subordinating conjunctions
 in tweets posted after November 8th 2017 relative to the number of subordinating conjunctions in
 tweets posted before November 8th 2017.
 ## Contingency Matrix
-Tweets before November 8th 2017 after November 8th 2017
-Amount of subordinating conjunctions found ??? ???
+![Contingency matrix]()
 The independent variable is whether a tweet is posted before or after the doubling of the character limit. The dependant variable is the amount of subordinating conjunctions in tweets.
 ## References
 Matras, Y. (1997). The function and typology of coordinating conjunctions: evidence from discourse
