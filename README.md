@@ -31,6 +31,6 @@ in tweets posted after November 8th 2017 will be identical for Dutch and English
 Tweets before November 8th 2017 after November 8th 2017
 Amount of subordinating conjunctions found ??? ???
 The independent variable is whether a tweet is posted before or after the doubling of the character limit. The dependant variable is the amount of subordinating conjunctions in tweets.
-### References
+# References
 Matras, Y. (1997). The function and typology of coordinating conjunctions: evidence from discourse
 and language-contact situations. Discourse and pragmatics in functional grammar , 177–191.
