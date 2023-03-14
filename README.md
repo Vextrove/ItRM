@@ -30,7 +30,7 @@ If the hypothesis holds true, there will be in increase in the number of subordi
 in tweets posted after November 8th 2017 relative to the number of subordinating conjunctions in
 tweets posted before November 8th 2017.
 ## Contingency Matrix
-![Contingency matrix]()
+![Contingency matrix](contingencymatrix.png)
 The independent variable is whether a tweet is posted before or after the doubling of the character limit. The dependant variable is the amount of subordinating conjunctions in tweets.
 ## References
 Matras, Y. (1997). The function and typology of coordinating conjunctions: evidence from discourse
