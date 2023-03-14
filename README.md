@@ -21,12 +21,13 @@ Subordinating conjunctions are words such as ”because”, ”therefore” and 
 arguments supporting a statement in a sentence. Matras (1997) The rate of arguments supporting
 statements in tweets can be determined by measuring the amount of subordinating conjunctions in
 that tweet.
-I will use a computer program to count the number of Dutch and English subordinating conjunctions, in two samples of tweets from before and after November 8th 2017. I will obtain these
-two samples of tweets from the Twitter corpus, which contains tweets sorted by year, month and
-day.
-If the hypothesis holds true, the increase or decrease in the number of subordinating conjunctions
-in tweets posted before November 8th 2017 relative to the number of subordinating conjunctions
-in tweets posted after November 8th 2017 will be identical for Dutch and English tweets.
+A computer program will be used to count the number of Dutch and English subordinating
+conjunctions, in two samples of tweets from before and after November 8th 2017. These two
+samples of tweets will be obtained from the Twitter corpus, which contains tweets sorted by year,
+month and day.
+If the hypothesis holds true, there will be in increase in the number of subordinating conjunctions
+in tweets posted after November 8th 2017 relative to the number of subordinating conjunctions in
+tweets posted before November 8th 2017.
 ## Contingency Matrix
 Tweets before November 8th 2017 after November 8th 2017
 Amount of subordinating conjunctions found ??? ???
