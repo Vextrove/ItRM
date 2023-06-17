@@ -9,7 +9,7 @@ def count_conjunctions(text):
     for word in trigger_words:
         conjunctions[word] = 0
 
-    for word in text.split():
+    for word in text:
         if word in trigger_words:
             conjunctions[word] += 1
 
@@ -19,7 +19,7 @@ def count_conjunctions(text):
 def main():
     '''Runs the module with a test sentence containing a conjunction'''
     text = "Deze zin bevat een conjunctie, waardoor iets zal gebeuren"
-    print(count_conjunctions(text))
+    print(count_conjunctions(text.split()))
 
 
 if __name__ == "__main__":
