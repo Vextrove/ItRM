@@ -2,6 +2,7 @@ from collections import Counter
 
 
 def count_conjunctions(text):
+    '''Counts occurrences of each conjunction in a given list of words'''
     conjunctions = Counter()
     trigger_words = open("conjunctions.txt", "r").read().split()
 
@@ -16,6 +17,7 @@ def count_conjunctions(text):
 
 
 def main():
+    '''Runs the module with a test sentence containing a conjunction'''
     text = "Deze zin bevat een conjunctie, waardoor iets zal gebeuren"
     print(count_conjunctions(text))
 
