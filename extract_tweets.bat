@@ -1,0 +1,1 @@
+zless /net/corpora/twitter2/Tweets/2016/*.out.gz | /net/corpora/twitter2/tools/tweet2tab text
