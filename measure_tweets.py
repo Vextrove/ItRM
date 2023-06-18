@@ -28,6 +28,7 @@ def extract_tweets(file_paths):
         with gzip.open(file_path, 'rt') as raw_tweets:
             for tweet in raw_tweets:
                 tweet = json.loads(tweet)['text']
+
                 if tweet[0:2] != 'RT':
                     tweets.append(tweet)
                 elif includeRetweets is True:
