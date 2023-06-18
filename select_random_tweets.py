@@ -11,7 +11,7 @@ def main():
             for month in [str(month*2).zfill(2) for month in range(1, 7)]:
                 text = (
                     f"scp {username}@karora.let.rug.nl:/net/corpora/twitter2/Tweets/{year}/{month}/{year}{month}"
-                    f"{str(random.randrange(1, 29)).zfill(2)}:{str(random.randrange(24)).zfill(2)}.out.gz ./Tweets\n"
+                    f"{str(random.randrange(1, 29)).zfill(2)}:{str(random.randrange(24)).zfill(2)}.out.gz ./tweets\n"
                 )
                 output.write(text)
 
