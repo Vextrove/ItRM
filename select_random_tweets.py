@@ -2,10 +2,10 @@ from random import random, randrange
 
 
 def main():
-    '''Creates a batch file containing $scp commands to download tweets'''
     years = ['2016', '2017', '2018']
     months = [str(month).zfill(2) for month in range(1, 13)]
     hours = [str(hour).zfill(2) for hour in range(24)]
+    '''Creates a batch file that downloads tweets from a random hour on a random day every other month'''
     username = open("username.txt", "r").read()
     random.seed(open("seed.txt", "r").read())
     print(randrange(24))
