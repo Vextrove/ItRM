@@ -82,7 +82,7 @@ def main():
 
     print('\nFrequency of each conjunction')
     print('Before 2017:', conjunctions_before)
-    print('After 2017:', conjunctions_before)
+    print('After 2017:', conjunctions_after)
 
 
 if __name__ == "__main__":
