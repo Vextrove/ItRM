@@ -53,6 +53,10 @@ def main():
         conjunctions[word] = 0
     hits = 0
 
+    for tweet in tweets:
+        conjunctions, hits = count_conjunctions(tweet, conjunctions, hits)
+    print(conjunctions)
+    print(hits)
 
 
 if __name__ == "__main__":
