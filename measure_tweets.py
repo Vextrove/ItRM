@@ -3,7 +3,7 @@ import json
 import os
 from collections import Counter
 
-trigger_words = open("conjunctions.txt", "r").read().split()
+TRIGGER_WORDS = open("conjunctions.txt", "r").read().split()
 
 
 def get_file_paths():
@@ -39,7 +39,7 @@ def count_conjunctions(tweet, conjunctions, hits):
     hit = False
 
     for word in tweet.split():
-        if word in trigger_words:
+        if word in TRIGGER_WORDS:
             conjunctions[word] += 1
             hit = True
 
@@ -52,7 +52,7 @@ def main():
     '''Runs the module with a test sentence containing a conjunction'''
     file_paths_before, file_paths_after = get_file_paths()
     conjunctions_before, conjunctions_after = Counter(), Counter()
-    for word in trigger_words:
+    for word in TRIGGER_WORDS:
         conjunctions_before[word], conjunctions_after[word] = 0, 0
     hits_before, hits_after = 0, 0
 
