@@ -1,20 +1,19 @@
-from random import random, randrange
+import random
 
 
 def main():
-    years = ['2016', '2017', '2018']
-    months = [str(month).zfill(2) for month in range(1, 13)]
-    hours = [str(hour).zfill(2) for hour in range(24)]
     '''Creates a batch file that downloads tweets from a random hour on a random day every other month'''
     username = open("username.txt", "r").read()
     random.seed(open("seed.txt", "r").read())
-    print(randrange(24))
-    random.seed(open("seed.txt", "r").read())
-    print(randrange(24))
 
-    for year in years:
-        for month in months:
-            print('scp', username + '@karora.let.rug.nl:/net/corpora/twitter2/Tweets/' + year + '/' + month + '/' + year + month + '01' + ':' + hours[randrange(24)] + '.out.gz ./Tweets')
+    with open("download_tweets.bat", "w") as output:
+        for year in ['2016', '2017', '2018']:
+            for month in [str(month*2).zfill(2) for month in range(1, 7)]:
+                text = (
+                    f"scp {username}@karora.let.rug.nl:/net/corpora/twitter2/Tweets/{year}/{month}/{year}{month}"
+                    f"{str(random.randrange(1, 29)).zfill(2)}:{str(random.randrange(24)).zfill(2)}.out.gz ./Tweets\n"
+                )
+                output.write(text)
 
 
 if __name__ == "__main__":
