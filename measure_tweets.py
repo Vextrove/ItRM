@@ -29,8 +29,7 @@ def get_file_paths():
 
 def main():
     '''Runs the module with a test sentence containing a conjunction'''
-    text = "Deze zin bevat een conjunctie, waardoor iets zal gebeuren"
-    print(count_conjunctions(text.split()))
+    # print(count_conjunctions(text.split()))
 
     for file_path in get_file_paths():
         with open(file_path, 'r') as file:
