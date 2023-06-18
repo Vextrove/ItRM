@@ -73,10 +73,6 @@ def main():
     print('Before 2017:', tweet_amount_before)
     print('After 2017:', tweet_amount_after)
 
-    print('\nAmount of tweets containing conjunctions')
-    print('Before 2017:', hits_before)
-    print('After 2017:', hits_after)
-
     print('\nFrequency of conjunctions')
     print('Before 2017:', conjunctions_before)
     print('After 2017:', conjunctions_before)
