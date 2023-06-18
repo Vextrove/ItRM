@@ -56,6 +56,7 @@ def main():
     '''Runs the module with a test sentence containing a conjunction'''
     file_paths_before, file_paths_after = get_file_paths()
     conjunctions_before, conjunctions_after = Counter(), Counter()
+
     for word in TRIGGER_WORDS:
         conjunctions_before[word], conjunctions_after[word] = 0, 0
     hits_before, hits_after = 0, 0
