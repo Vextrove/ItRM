@@ -4,19 +4,20 @@ import os
 from collections import Counter
 
 
-def count_conjunctions(text):
+def count_conjunctions(tweet, conjunctions, hits):
     '''Counts occurrences of each conjunction in a given list of words'''
-    conjunctions = Counter()
     trigger_words = open("conjunctions.txt", "r").read().split()
+    hit = False
 
-    for word in trigger_words:
-        conjunctions[word] = 0
-
-    for word in text:
+    for word in tweet.split():
         if word in trigger_words:
             conjunctions[word] += 1
+            hit = True
 
-    return conjunctions
+    if hit is True:
+        hits += 1
+
+    return conjunctions, hits
 
 
 def get_file_paths():
