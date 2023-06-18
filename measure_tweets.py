@@ -79,8 +79,8 @@ def main():
     print('After 2017:', round(conjunction_count_after / tweet_amount_after, 5))
 
     print('\nPercentage of tweets containing conjunctions')
-    print('Before 2017:', str(round(100 * hits_before / tweet_amount_before, 3)) + '%')
-    print('After 2017:', str(round(100 * hits_after / tweet_amount_after, 3)) + '%')
+    print('Before 2017:', str(round(100 * hits_before / tweet_amount_before, 2)) + '%')
+    print('After 2017:', str(round(100 * hits_after / tweet_amount_after, 2)) + '%')
 
     print('\nFrequency of each conjunction')
     print('Before 2017:', conjunctions_before)
