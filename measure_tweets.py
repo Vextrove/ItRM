@@ -56,8 +56,7 @@ def main():
 
     print('Extracting tweets...')
     tweets_before, tweets_after = extract_tweets(file_paths_before), extract_tweets(file_paths_after)
-    tweet_amount_before = len(tweets_before)
-    tweet_amount_after = len(tweets_after)
+    tweet_amount_before, tweet_amount_after = len(tweets_before), len(tweets_after)
 
     try:
         for tweet in tweets_before:
