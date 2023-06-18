@@ -3,6 +3,8 @@ import json
 import os
 from collections import Counter
 
+trigger_words = open("conjunctions.txt", "r").read().split()
+
 
 def get_file_paths():
     """Obtains file paths of tweets"""
@@ -30,7 +32,6 @@ def extract_tweets(file_paths):
 
 def count_conjunctions(tweet, conjunctions, hits):
     '''Counts occurrences of each conjunction in a given list of words'''
-    trigger_words = open("conjunctions.txt", "r").read().split()
     hit = False
 
     for word in tweet.split():
@@ -51,7 +52,6 @@ def main():
     tweets = extract_tweets(file_paths_before)
 
     conjunctions = Counter()
-    trigger_words = open("conjunctions.txt", "r").read().split()
     for word in trigger_words:
         conjunctions[word] = 0
     hits = 0
