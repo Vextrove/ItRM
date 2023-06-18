@@ -1,14 +1,11 @@
 aangezien
 alhoewel
-alsof
 daardoor
 daarom
-dus
 hierdoor
 hierom
 hoewel
 indien
-maar
 mits
 noch
 ofschoon
@@ -17,7 +14,4 @@ ondanks
 opdat
 tenzij
 waardoor
-wanneer
-zoals
 zodat
-zolang
