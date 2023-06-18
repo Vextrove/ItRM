@@ -56,10 +56,14 @@ def main():
 
     print('Extracting tweets...')
     tweets_before, tweets_after = extract_tweets(file_paths_before), extract_tweets(file_paths_after)
+    tweet_amount_before = len(tweets_before)
+    tweet_amount_after = len(tweets_after)
 
     try:
-        for tweet in tweets:
-            conjunctions, hits = count_conjunctions(tweet, conjunctions, hits)
+        for tweet in tweets_before:
+            conjunctions_before, hits_before = count_conjunctions(tweet, conjunctions_before, hits_before)
+        for tweet in tweets_after:
+            conjunctions_after, hits_after = count_conjunctions(tweet, conjunctions_after, hits_after)
     except KeyboardInterrupt:
         pass
     print(conjunctions)
