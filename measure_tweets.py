@@ -29,6 +29,14 @@ def get_file_paths():
 
 def main():
     '''Runs the module with a test sentence containing a conjunction'''
+    file_paths_before, file_paths_after = get_file_paths()
+    tweets = extract_tweets(file_paths_before)
+
+    conjunctions = Counter()
+    trigger_words = open("conjunctions.txt", "r").read().split()
+    for word in trigger_words:
+        conjunctions[word] = 0
+    hits = 0
 
     for file_path in get_file_paths():
         with gzip.open(file_path, 'rt') as tweets:
