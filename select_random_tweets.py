@@ -7,8 +7,8 @@ def main():
     random.seed(open("seed.txt", "r").read())
 
     with open("download_tweets.bat", "w") as output:
-            for month in [str(month*2).zfill(2) for month in range(1, 7)]:
         for year in ['2015', '2016', '2018', '2019']:
+            for month in [str(month*3).zfill(2) for month in range(1, 5)]:
                 day = str(random.randrange(1, 29)).zfill(2)
                 hour = str(random.randrange(24)).zfill(2)
                 text = (
