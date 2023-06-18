@@ -1,5 +1,3 @@
-How to run:
-
 1. Create an empty folder called 'tweets'
 2. Create a txt file called 'username.txt' that includes your Karora username {username}@karora.let.rug.nl
 3. Run select_random_tweets.py. It will generate a 'download_tweets.bat' that will be used to download tweets
