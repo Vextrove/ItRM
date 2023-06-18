@@ -45,7 +45,6 @@ def count_conjunctions(tweet, conjunctions, hits):
 
     if hit is True:
         hits += 1
-
     return conjunctions, hits
 
 
