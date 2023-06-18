@@ -4,6 +4,7 @@ import os
 from collections import Counter
 
 TRIGGER_WORDS = open("conjunctions.txt", "r").read().split()
+includeRetweets = False
 
 
 def get_file_paths():
@@ -27,10 +28,10 @@ def extract_tweets(file_paths):
                 tweet = json.loads(tweet)['text']
                 if tweet[0:2] != 'RT':
                     tweets.append(tweet)
-                # UNCOMMENT TO ALSO INCLUDE RETWEETS
-                # else:
-                #     tweets.append(tweet)
-        print('Extracted', str(file_paths.index(file_path) + 1).zfill(1), 'out of', str(len(file_paths)), 'tweets')
+                elif includeRetweets is True:
+                    tweets.append(tweet)
+
+        print('Extracted', str(file_paths.index(file_path) + 1).zfill(1), 'out of', str(len(file_paths)), 'tweets...')
     return tweets
 
 
