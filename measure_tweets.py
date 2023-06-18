@@ -25,7 +25,10 @@ def get_file_paths():
     file_paths_before, file_paths_after = [], []
     for root, dirs, files in os.walk('./tweets'):
         for file in files:
-            file_paths_before.append(os.path.join(root, file))
+            if int(file[:4]) < 2017:
+                file_paths_before.append(os.path.join(root, file))
+            else:
+                file_paths_after.append(os.path.join(root, file))
     return file_paths_before, file_paths_after
 
 
