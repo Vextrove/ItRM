@@ -1,9 +1,9 @@
-omdat
-daarom
-zodat
-ondanks
 aangezien
-tenzij
+alhoewel
+daarom
 hoewel
 mits
-alhoewel
+omdat
+ondanks
+tenzij
+zodat
