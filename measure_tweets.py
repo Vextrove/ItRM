@@ -69,7 +69,7 @@ def main():
     conjunction_count_before = sum(conjunctions_before.values())
     conjunction_count_after = sum(conjunctions_after.values())
 
-    print('\nAmount of tweets')
+    print('\nAmount of measured tweets')
     print('Before 2017:', tweet_amount_before)
     print('After 2017:', tweet_amount_after)
 
