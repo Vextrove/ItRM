@@ -29,7 +29,6 @@ def get_file_paths():
 
 def main():
     '''Runs the module with a test sentence containing a conjunction'''
-    # print(count_conjunctions(text.split()))
 
     for file_path in get_file_paths():
         with gzip.open(file_path, 'rt') as tweets:
