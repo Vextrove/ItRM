@@ -47,6 +47,7 @@ def count_conjunctions(tweet, conjunctions, hits):
 def main():
     '''Runs the module with a test sentence containing a conjunction'''
     file_paths_before, file_paths_after = get_file_paths()
+    print('Extracting tweets...')
     tweets = extract_tweets(file_paths_before)
 
     conjunctions = Counter()
