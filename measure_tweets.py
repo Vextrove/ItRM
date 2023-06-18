@@ -21,11 +21,14 @@ def count_conjunctions(text):
 
 def get_file_paths():
     """Obtains file paths of tweets"""
-    file_paths = []
+    file_paths_before = []
+    file_paths_after = []
     for root, dirs, files in os.walk('./tweets'):
         for file in files:
-            file_paths.append(os.path.join(root, file))
-    return file_paths
+            file_paths_before.append(os.path.join(root, file))
+    return file_paths_before, file_paths_after
+
+
 def extract_tweets(file_paths):
     '''Extracts a list of tweets from files in a given list of file paths'''
     tweets = []
