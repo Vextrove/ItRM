@@ -1,5 +1,5 @@
 1. Create an empty folder called 'tweets'
 2. Create a txt file called 'username.txt' that includes your Karora username {username}@karora.let.rug.nl
 3. Run select_random_tweets.py. It will generate a 'download_tweets.bat' that will be used to download tweets
-4. Run 'download_tweets.bat' and log in to Karora to download the tweets
+4. Run 'download_tweets.bat' and log in to Karora for each command to download the tweets. Note that each authenticator code can only be used once, so you will have to wait for a new code for each download. It is recommended that you copy your password so you can paste it for every new download. 
 5. Run measure_tweets.py
