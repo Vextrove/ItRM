@@ -1,6 +1,0 @@
-How to run:
-
-1. Create a txt file called 'username.txt' that includes your Karora username {username}@karora.let.rug.nl
-2. Run 
-3. Run 'download_tweets.bat' and log in to Karora to download the tweets
-4. Run measure_tweets.py
