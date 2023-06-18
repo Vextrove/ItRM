@@ -1,3 +1,4 @@
+import gzip
 import os
 from collections import Counter
 
@@ -31,8 +32,10 @@ def main():
     # print(count_conjunctions(text.split()))
 
     for file_path in get_file_paths():
-        with open(file_path, 'r') as file:
-            print(file)
+        with gzip.open(file_path, 'rt') as tweets:
+            print(tweets)
+            for tweet in tweets.read():
+                print(tweet)
 
 
 if __name__ == "__main__":
