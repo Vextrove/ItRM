@@ -26,15 +26,15 @@ def get_file_paths():
                 file_paths.append(os.path.join(root, file))
     return file_paths
 
-    for file_path in get_file_paths():
-        with open(file_path, 'r') as file:
-            print(file)
-
 
 def main():
     '''Runs the module with a test sentence containing a conjunction'''
     text = "Deze zin bevat een conjunctie, waardoor iets zal gebeuren"
     print(count_conjunctions(text.split()))
+
+    for file_path in get_file_paths():
+        with open(file_path, 'r') as file:
+            print(file)
 
 
 if __name__ == "__main__":
