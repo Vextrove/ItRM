@@ -8,7 +8,7 @@ def main():
 
     with open("download_tweets.bat", "w") as output:
         for year in ['2015', '2016', '2018', '2019']:
-            for month in [str(month*3).zfill(2) for month in range(1, 5)]:
+            for month in [str(month).zfill(2) for month in range(1, 13)]:
                 day = str(random.randrange(1, 29)).zfill(2)
                 hour = str(random.randrange(24)).zfill(2)
                 text = (
