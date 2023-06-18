@@ -27,6 +27,7 @@ def extract_tweets(file_paths):
                 tweet = json.loads(tweet)['text']
                 if tweet[0:2] != 'RT':
                     tweets.append(tweet)
+        print('Extracted', str(file_paths.index(file_path) + 1).zfill(1), 'out of', str(len(file_paths)), 'tweets')
     return tweets
 
 
@@ -48,13 +49,13 @@ def count_conjunctions(tweet, conjunctions, hits):
 def main():
     '''Runs the module with a test sentence containing a conjunction'''
     file_paths_before, file_paths_after = get_file_paths()
-    print('Extracting tweets...')
-    tweets = extract_tweets(file_paths_before)
-
     conjunctions = Counter()
     for word in trigger_words:
         conjunctions[word] = 0
     hits = 0
+
+    print('Extracting tweets...')
+    tweets_before, tweets_after = extract_tweets(file_paths_before), extract_tweets(file_paths_after)
 
     try:
         for tweet in tweets:
