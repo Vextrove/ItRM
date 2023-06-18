@@ -73,17 +73,17 @@ def main():
     print('Before 2017:', tweet_amount_before)
     print('After 2017:', tweet_amount_after)
 
-    print('\nFrequency of conjunctions')
-    print('Before 2017:', conjunctions_before)
-    print('After 2017:', conjunctions_before)
-
-    print('\nAverage amount of conjunctions per tweet')
+    print('\nAmount of conjunctions per tweet')
     print('Before 2017:', round(conjunction_count_before / tweet_amount_before, 5))
     print('After 2017:', round(conjunction_count_after / tweet_amount_after, 5))
 
     print('\nPercentage of tweets containing conjunctions')
     print('Before 2017:', str(round(100 * hits_before / tweet_amount_before, 3)) + '%')
     print('After 2017:', str(round(100 * hits_after / tweet_amount_after, 3)) + '%')
+
+    print('\nFrequency of each conjunction')
+    print('Before 2017:', conjunctions_before)
+    print('After 2017:', conjunctions_before)
 
 
 if __name__ == "__main__":
