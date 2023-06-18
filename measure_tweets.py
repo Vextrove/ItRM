@@ -25,6 +25,16 @@ def get_file_paths():
         for file in files:
             file_paths.append(os.path.join(root, file))
     return file_paths
+def extract_tweets(file_paths):
+    '''Extracts a list of tweets from files in a given list of file paths'''
+    tweets = []
+    for file_path in file_paths:
+        with gzip.open(file_path, 'rt') as raw_tweets:
+            for tweet in raw_tweets:
+                tweet = json.loads(tweet)['text']
+                if tweet[0:2] != 'RT':
+                    tweets.append(tweet)
+    return tweets
 
 
 def main():
@@ -38,11 +48,6 @@ def main():
         conjunctions[word] = 0
     hits = 0
 
-    for file_path in get_file_paths():
-        with gzip.open(file_path, 'rt') as tweets:
-            print(tweets)
-            for tweet in tweets.read():
-                print(tweet)
 
 
 if __name__ == "__main__":
