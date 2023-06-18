@@ -57,7 +57,9 @@ def main():
     hits_before, hits_after = 0, 0
 
     print('Extracting tweets...')
-    tweets_before, tweets_after = extract_tweets(file_paths_before), extract_tweets(file_paths_after)
+    tweets_before = extract_tweets(file_paths_before)
+    print('\nExtracting more tweets...')
+    tweets_after = extract_tweets(file_paths_after)
 
     try:
         for tweet in tweets_before:
