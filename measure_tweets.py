@@ -92,7 +92,7 @@ def main():
     print('Absolute increase:',
           str(round(100 * (hits_after / tweet_amount_after - hits_before / tweet_amount_before), 2)) + '%')
     print('Relative increase:',
-          str(round(100 * (hits_after / tweet_amount_after) / (hits_before / tweet_amount_before), 2)) + '%')
+          str(round(100 * ((hits_after / tweet_amount_after) / (hits_before / tweet_amount_before) - 1), 2)) + '%')
 
     print('\nFrequency of each conjunction')
     print('Before 2017:', conjunctions_before)
